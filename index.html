@@ -24,14 +24,14 @@
       console.log(response);
       var apiLink = queryURL + "&api_key=" + KEY;
    		console.log(apiLink);
-    	var feedId = response.result.webcams[0].id;
-    	console.log(feedId);
+    	// var feedId = response.result.webcams[0].id;
+    	// console.log(feedId);
 
     
 	    
-			var webcamDiv = $("<div>");
+			var webcamDiv = $("<a name = 'lkr-timelapse-player'>");
 			webcamDiv.attr("class", "webcamDiv");
-			$(webcamDiv).append("<a name='lkr-timelapse-player' data-id='1000550952' data-play='day' href='https://lookr.com/1000550952' target='_blank'>Beinwil am See: Hallwilersee Nord</a>");
+			$(webcamDiv).append("<data-id='1000550952' data-play='day' href='https://lookr.com/1000550952' target='_blank'>Beinwil am See: Hallwilersee Nord</a>");
 		});
 	
 	
