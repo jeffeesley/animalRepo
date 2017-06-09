@@ -4,14 +4,14 @@
 	<title>Project 1</title>
 </head>
 <body>
-			<!-- <a name="lkr-timelapse-player" data-id="1011516791" data-play="day" href="//lookr.com/1011516791" target="_blank">Sils: Lake Sils − St. Moritz</a><script async type="text/javascript" src="//api.lookr.com/embed/script/timelapse.js"></script> -->
+			
 		<!-- <a name="lkr-timelapse-player" data-id="1000550952" data-play="day" href="https://lookr.com/1000550952" target="_blank">Beinwil am See: Hallwilersee Nord</a> -->
 		<script async type="text/javascript" src="https://api.lookr.com/embed/script/timelapse.js"></script>
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script type = "text/javascript">
 		var KEY = "hdClS0YzlOmshlFFeW3W3WV1PoXEp17UCdrjsnAeTCrRrnazfX";
 
-		var queryURL = "https://webcamstravel.p.mashape.com/webcams/list";
+		var queryURL = "https://webcamstravel.p.mashape.com/webcams/list?show=regions";
 
 
     $.ajax({
@@ -28,7 +28,7 @@
     	console.log(feedId);
 
     
-	    console.log(displayFeed);
+	    
 			var webcamDiv = $("<div>");
 			webcamDiv.attr("class", "webcamDiv");
 			$(webcamDiv).append("<a name='lkr-timelapse-player' data-id='1000550952' data-play='day' href='https://lookr.com/1000550952' target='_blank'>Beinwil am See: Hallwilersee Nord</a>");
